@@ -1,0 +1,135 @@
+/* CSS Style below:- */
+
+html
+{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body
+{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.maintenance-container
+{
+    text-align: center;
+    background-color: aquamarine;
+    padding: 40px;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.developer p
+{
+    margin: 0;
+}
+
+.developer
+{
+    background-color: aquamarine;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: inline-block;
+    padding: 9px;
+}
+
+h1
+{
+    font-size: 3em;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.countdown
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+/* Responsiveness. */
+@media screen and (max-width: 600px)
+{
+    .maintenance-container
+    {
+        padding: 40px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        padding: 20px;
+
+        margin: 20px;
+    }
+
+    h1
+    {
+        font-size: 2.1em;
+        margin: 0 15px;
+    }
+
+    p
+    {
+        margin: 0 15px;
+    }
+
+    .developer
+    {
+        margin-bottom: 15px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1500px)
+{
+    .maintenance-container
+    {
+        padding: 40px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        padding: 50px;
+        margin: 20px;
+        font-size: large;
+    }
+
+    h1
+    {
+        font-size: 2.1em;
+        margin: 0 15px;
+    }
+
+    p
+    {
+        margin: 0 15px;
+    }
+
+    .developer
+    {
+        margin-bottom: 15px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}

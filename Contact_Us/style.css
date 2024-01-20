@@ -1,0 +1,92 @@
+/* CSS Style below:- */
+
+body
+{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;   
+}
+
+.contactHead
+{
+    text-align: center;
+    background-color: blueviolet;
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 9px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-details
+{
+    background-color: #2192FF;
+    max-width: 800px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-details .text
+{
+    padding: 10px;
+}
+
+.contactHead:hover
+{
+    background-color: #FFEA20;
+    color: black;
+}
+
+.contact-details:hover
+{
+    background-color:darkblue;
+}
+
+.contactHead
+{
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+
+.contact-details
+{
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+}
+
+@media screen and (max-width: 768px)
+{
+    .contactHead
+    {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .contact-details
+    {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .contact-details p
+    {
+        padding: 100px;
+    }
+}

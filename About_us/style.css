@@ -1,0 +1,196 @@
+/* CSS Style below. */
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    padding-bottom: 60px;
+}
+
+header
+{
+    background-color: #161A30;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section
+{
+    padding: 40px 0;
+}
+
+.team-section
+{
+    padding: 40px 0;
+}
+
+.team-member
+{
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img
+{
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover img
+{
+    transform: scale(2.1);
+    -webkit-transform: scale(2.1);
+    -moz-transform: scale(2.1);
+    -ms-transform: scale(2.1);
+    -o-transform: scale(2.1);
+}
+
+.swayam:hover img
+{
+    transform: scale(4);
+    -webkit-transform: scale(4);
+    -moz-transform: scale(4);
+    -ms-transform: scale(4);
+    -o-transform: scale(4);
+}
+
+.harsha:hover img
+{
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+}
+
+.vaibhav:hover img
+{
+    transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+}
+
+h2
+{
+    color: #3498db;
+}
+
+h3
+{
+    color: #2c3e50;
+}
+
+p
+{
+    color: #7f8c8d;
+}
+
+footer
+{
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer p
+{
+    color: white;
+}
+
+.modal
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+  
+.modal-content
+{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+.close
+{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover
+{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:focus
+{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .container
+    {
+        padding: 0 10px;
+    }
+
+    header
+    {
+        padding: 15px;
+    }
+
+    .team-member img
+    {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .team-member:hover img
+    {
+        transform: scale(1.1);
+    }
+}

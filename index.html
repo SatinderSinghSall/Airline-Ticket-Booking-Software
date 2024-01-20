@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.js"></script>
+    <script src="./script.js"></script>
+
+    <title> Flight Ticket Booking. </title>
+</head>
+
+<body>
+
+    <header>
+        <h1> <strong> Flight Ticket Booking Software. </strong> </h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <h4> Book your tickets hassle free. </h4>
+            </div>
+
+            <div class="navbar-links">
+                <a href="./Login_Page/index.html" target="_blank"> Login / Sign-up. </a>
+                <a href="./Home/index.html" target="_blank"> Home. </a>
+                <a href="./Track_Your_Flight_LIVE/index.html" target="_blank"> Track your flight LIVE. </a>
+                <a href="./About_us/index.html" target="_blank"> About-us. </a>
+                <a href="./Contact_Us/index.html" target="_blank"> Contact-us. </a>
+            </div>
+
+            <div class="navbar-toggle" onclick="toggleNavbar()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <form id="bookingForm">
+            <label for="Cname"> Customer Name: </label>
+            <input type="text" id="Cname" name="Cname" placeholder="Enter your name." required>
+
+            <label for="from"> From: </label>
+            <input type="text" id="from" name="from" placeholder="Departure city." required>
+
+            <label for="to"> To: </label>
+            <input type="text" id="to" name="to" placeholder="Destination city." required>
+
+            <label for="airline-select"> Select Airline: </label>
+            <select id="airline-select" name="airline-select">
+                <option value="IndiGo."> IndiGo. </option>
+                <option value="Air India."> Air India. </option>
+                <option value="Vistara."> Vistara. </option>
+                <option value="SpiceJet."> SpiceJet </option>
+                <option value="GoFirst."> Go First. </option>
+                <option value="Air Asia Express."> Air Asia India. </option>
+                <option value="Air India Express."> Air India Express. </option>
+            </select>
+
+            <label for="fNumber"> Flight Number: </label>
+            <input type="text" id="fNumber" name="fNumber" placeholder="Enter your flight number.">
+
+            <label for="numTickets"> Number of Tickets: </label>
+            <input type="number" id="numTickets" name="numTickets" placeholder="Enter number of tickets." required>
+
+            <label for="date"> Departure Date: </label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time"> Departure Time: </label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="class"> Class: </label>
+            <select id="class" name="class">
+                <option value="Economy Class."> Economy Class. </option>
+                <option value="Business Class."> Business Class. </option>
+                <option value="First Class."> First Class. </option>
+            </select>
+
+            <button type="button" onclick="submitForm()"> Confirm Booking. </button>
+        </form>
+
+        <div class="summary" id="bookingSummary">
+            <h2> <big> Please find the booking summary below. </big> </h2>
+            <hr>
+            <p> <strong> Customer Name: </strong> <span id="summaryName"></span> </p>
+            <p> <strong> From: </strong> <span id="summaryFrom"></span> </p>
+            <p> <strong> To: </strong> <span id="summaryTo"></span> </p>
+            <p> <strong> Airline: </strong> <span id="summaryAirline"></span> </p>
+            <p> <strong> Flight Number: </strong> <span id="SummaryFnumber"></span> </p>
+            <p> <strong> Number of tickets: </strong> <span id="summaryNumTickets"></span> </p>
+            <p> <strong> Date: </strong> <span id="summaryDate"></span> </p>
+            <p class="side-shift"> <strong> Departure Time: </strong> <span id="summaryTime"></span> </p>
+            <p class="side-shift"> <strong> Class: </strong> <span id="summaryClass"></span> </p>
+            <p class="conformed"> <b> Congratulations, your ticket has been conformed by the airline. </b> </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p> &copy; 2024 Flight Ticket Booking. All rights reserved. </p>
+            <p> <big> Developed by Satinder Singh Sall. </big> </p>
+        </div>
+    </footer>
+
+</body>
+</html>
